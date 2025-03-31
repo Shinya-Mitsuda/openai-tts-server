@@ -32,3 +32,8 @@ async def tts(request: Request):
 
     # クライアントにMP3ファイルとして返す
     return StreamingResponse(audio_data, media_type="audio/mpeg")
+
+# デバッグ用
+@app.get("/")
+def root():
+    return {"message": "Server is alive!"}
