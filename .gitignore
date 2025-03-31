@@ -6,4 +6,4 @@ __pycache__/
 .venv/
 
 # Audio files
-*.mp3
+*.mp3.DS_Store
